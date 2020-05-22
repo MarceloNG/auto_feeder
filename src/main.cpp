@@ -1,4 +1,7 @@
 #include <Arduino.h>
+#include <WiFiManager.h>
+
+void setupWifiManager();
 
 void setup()
 {
