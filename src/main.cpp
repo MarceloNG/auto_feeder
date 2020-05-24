@@ -1,15 +1,19 @@
-#include <Arduino.h>
-#include <WiFiManager.h>
+#include <ESP8266WiFi.h>
+#include <ESP8266WebServer.h>
+#include <DNSServer.h>
 
-void setupWifiManager();
+#include "GerenciadorWifi.h"
+
 
 void setup()
 {
-    Serial.begin(9600);
+    Serial.begin(115200);
+    GerenciadorWifi::begin();
 }
 
 void loop()
 {
     Serial.println("Hello world!");
-    delay(1000);
+    delay(1000); 
 }
+
